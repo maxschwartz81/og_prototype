@@ -1,0 +1,103 @@
+/*reset all basic CSS*/
+
+header, h1, p, body, ul, li, nav {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: inherit;
+	font-family: sans-serif;
+	font-weight: normal;
+	list-style: none;
+}
+
+/*Clearfix is magic - no need to understand*/
+
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+* {
+	transition: .5s;
+}
+/*CSS Transition*/
+
+
+
+/*Here are the page elements*/
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+
+
+header {
+	padding: 10px;
+	background: white;
+	width: 100%;
+	position: fixed;
+}
+
+.wrapper {
+	width: 1140px;
+	margin: auto;
+}
+
+nav {
+	position: relative;
+}
+
+nav > ul > li {
+	color: #51b9db;
+	letter-spacing: 1px; 
+	float: left;
+	padding: 20px;
+}
+
+#logo {
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 20px;
+	font-weight: bold;
+	background: #51b9db;
+}
+
+body > section {
+	padding: 10px;
+	padding-top: 78px;
+}
+
+.biggy:nth-child(even){
+	background: yellow;
+}
+
+
+.cta {
+	color: white;
+	padding: 20px;
+	background: #51b9db;
+}
+
+.offset {
+	left: 100px;
+}
+
+.notoffset {
+	left: 0px;
+}
+
+nav.offset .cta {
+	opacity: 0;
+}
+
+
+
